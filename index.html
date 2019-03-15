@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style>
+    body {
+        height: 3300px;
+        background-color: #ccc;
+        /*overflow: hidden; 当页面只有一页的时候，因为img的top值会出现滚动条的情况(滚动条闪烁)*/
+    }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript" src="jsized.snow.min.js"></script>
+    <script>
+    createSnow('', 60);
+    document.onclick = function() {
+        removeSnow();
+    }
+    </script>
+</body>
+
+</html>
